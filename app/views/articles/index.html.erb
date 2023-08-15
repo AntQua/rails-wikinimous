@@ -1,0 +1,12 @@
+<h1>Articles  <i class="fa-regular fa-newspaper"></i></h1>
+<div class="container">
+  <div class="row">
+    <div class = "col-sm-8 col-sm-offset-2">
+      <ul class="list-group">
+        <% @articles.each do |article| %>
+          <li class="list-group-item list-group-item-action"><%= link_to article.title, article_path(article) %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
